@@ -1,0 +1,175 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar Styling */
+.navbar {
+    padding: 1rem 1.5rem;
+}
+
+.navbar-brand img {
+    width: 60px; /* Bigger logo size */
+    height: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.navbar-shrink {
+    background-color: #0056b3 !important; /* Slightly darker blue */
+    transition: background-color 0.3s ease;
+}
+
+/* Banner Styling */
+header {
+    position: relative;
+    background: url('BATHROOM.webp') no-repeat center center/cover;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.banner .logo {
+    width: 200px;
+    border: 3px solid orange;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent background */
+    padding: 10px;
+    transition: opacity 0.3s ease;
+}
+
+.banner .logo:hover {
+    opacity: 0.8;
+}
+
+/* Colors */
+.bg-primary {
+    background-color: #007bff !important; /* Company Blue */
+}
+
+.btn-primary {
+    background-color: #ff6700; /* Company Orange */
+    border-color: #ff6700;
+}
+
+.btn-primary:hover {
+    background-color: #ff4500;
+    border-color: #ff4500;
+}
+
+/* About Section */
+#about {
+    background: #f9f9f9;
+    text-align: center;
+    padding: 3rem 1rem;
+}
+
+#about h2 {
+    color: #007bff;
+}
+
+/* Services Section */
+#services {
+    padding: 3rem 1rem;
+}
+
+#services h2 {
+    margin-bottom: 40px;
+    color: #ff6700;
+}
+
+#services .col-md-4 {
+    margin-bottom: 2rem;
+    position: relative;
+    overflow: hidden; /* For hover zoom effect */
+    border-radius: 10px;
+}
+
+#services .col-md-4 img {
+    width: 100%;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    border-radius: 10px;
+}
+
+#services .col-md-4 img:hover {
+    transform: scale(1.1); /* Zoom effect */
+    filter: brightness(0.9); /* Slight dimming effect */
+}
+
+#services .col-md-4 h4 {
+    color: #007bff;
+    margin-top: 1rem;
+}
+
+#services .col-md-4 p {
+    color: #666;
+}
+
+/* Contact Section */
+#contact {
+    padding: 3rem 1rem;
+    text-align: center;
+}
+
+#contact input, #contact textarea {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    width: 100%;
+}
+
+#contact button {
+    background: #ff6700;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+}
+
+#contact button:hover {
+    background: #ff4500;
+}
+
+/* Footer Styling */
+footer {
+    background: #007bff;
+    color: white;
+    padding: 1.5rem 0;
+    text-align: center;
+    position: relative;
+}
+
+footer i {
+    color: #ff6700;
+    font-size: 1.5rem;
+    margin: 0 0.5rem;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+footer i:hover {
+    transform: scale(1.2); /* Enlarge icon on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        height: 50vh;
+    }
+
+    .banner .logo {
+        width: 100px;
+    }
+
+    #services .col-md-4 {
+        margin-bottom: 20px;
+    }
+}

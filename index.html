@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plumb Serve</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="big.png" alt="Plumb Serve Logo" width="60" height="60" class="d-inline-block align-text-top me-2">
+                <span>Plumb Serve</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <header id="home" class="text-center text-white py-5">
+        <div class="banner">
+            <img src="big.png" alt="Plumb Serve Logo" class="logo">
+            <h1 class="mt-3">Welcome to Plumb Serve</h1>
+            <p>Service Through Plumbing</p>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container text-center">
+            <h2>About Us</h2>
+            <p>At Plumb Serve, we’re a new, reliable plumbing company dedicated to providing top-quality service and customer satisfaction with every job.</p>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="bg-light py-5">
+        <div class="container text-center">
+            <h2>Our Services</h2>
+            <div class="row">
+                <!-- First Row -->
+                <div class="col-md-4">
+                    <div class="service-card">
+                        <img src="PIPE.jpeg" alt="Pipe Repairs">
+                        <h4>Pipe Repairs</h4>
+                        <p>Quick and reliable pipe repair services for your home or office.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-card">
+                        <img src="drain.png" alt="Drain Cleaning">
+                        <h4>Drain Cleaning</h4>
+                        <p>Efficient cleaning solutions to keep your drains unclogged.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-card">
+                        <img src="solar.png" alt="Solar Gyser Installation">
+                        <h4>Solar Gyser Installation</h4>
+                        <p>Expert installation and maintenance for all types of solar gysers.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <!-- Second Row -->
+                <div class="col-md-4">
+                    <div class="service-card">
+                        <img src="kitchen 2.jpeg" alt="Kitchen Sink Installation">
+                        <h4>Kitchen Sink Installation</h4>
+                        <p>We also do state-of-the-art kitchen repairs.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-card">
+                        <img src="chamber.jpeg" alt="Toilet Seat Repairs and Construction">
+                        <h4>Toilet Seat Repairs and Construction</h4>
+                        <p>We offer state-of-the-art toilet seat repairs, ensuring your bathroom fixtures are restored to perfect condition with the latest tools and techniques.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-card">
+                        <img src="shower.jpeg" alt="Shower Repairs and Installations">
+                        <h4>Shower Repairs and Installations</h4>
+                        <p>We specialize in custom shower construction, delivering beautiful, durable, and expertly designed showers tailored to your space and style.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container text-center">
+            <h2>Contact Us</h2>
+            <!-- Update the form to POST to PHP script -->
+            <form id="contactForm" action="contact_form.php" method="POST">
+                <div class="mb-3">
+                    <input type="text" id="name" name="name" class="form-control" placeholder="Your Name" required>
+                </div>
+                <div class="mb-3">
+                    <input type="email" id="email" name="email" class="form-control" placeholder="Your Email" required>
+                </div>
+                <div class="mb-3">
+                    <textarea id="message" name="message" class="form-control" rows="5" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white text-center py-3">
+        &copy; 2024 Plumb Serve. All rights reserved.
+        <div>
+            <a href="https://wa.me/+263771768388?text=Hello, I have an inquiry about your plumbing services." target="_blank">
+                <i class="fab fa-whatsapp fa-2x text-white"></i>
+            </a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
