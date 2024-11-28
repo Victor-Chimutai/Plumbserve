@@ -1,5 +1,5 @@
-![image](https://github.com/user-attachments/assets/7aed6e5d-a6a6-42d9-8e4d-de8fe743747d)# Plumbserve
-plumbing site
+
+
 **Overview**
 Welcome to Plumb Serve, a fully functional website created as part of the Emerging Web Technologies final project. This site is designed to showcase the services of a plumbing company, aiming to establish an engaging and professional online presence. The project includes an intuitive user interface, responsive design, and practical features that cater to user needs.
 
